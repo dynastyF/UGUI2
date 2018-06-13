@@ -1,0 +1,29 @@
+How to use?
+1、How to use "WaterSurface_no_reflect.shader"?
+	See "Scenes/example_no_relfect".
+    Create a new material, select the "Custom/WaterSurface_no_reflect" in the "Shader" option.
+    Set the paramters correctly.
+ 2、How to use "WaterSurface_reflect.shader"?
+ 	See "Scenes/example_reflect".
+    Create a new material, select the "Custom/WaterSurface_no_reflect" in the "Shader" option.
+    Set the paramters correctly.
+    Set the layout of water mesh as "Water", drag the "Scrips/Reflection" to the water mesh.
+
+Parameter Description
+1、parameters of shader
+    Main Color : The additive color of "Refract Texture".
+    Refract Texture : The water surface texture. It should be privided by artist. See "Textures/water_surface";
+    Bump Texture : A normal texture used to simulate water wave. Use "Textures/SmallWaves".
+    Bump strength : The strength of the "Bump Texture". Normally assign 2 to it.
+    Bump direction : The direction of water.There are two water wave here.(x,y) is the first direction of water wave.(z, w) is the second. Don't assign them same value.
+    Fresnel Texture : It stores the fresnel factor of water. Use the "Textures/fresnel" texture;
+    skybox : Use "Textures/sky";
+    Specular Color : the color of specular.
+    shiness,Refract Perturb,Reflect Perturb:
+    	x is the specular shiness.
+    	y is the refraction perturb.
+    	z is the reflection perturb.
+    sun direction : Parameter (x, y, z) define the sun direction.
+
+2、parameters of "Reflection" script
+	Clip Plane Offset : The offset of reflection clip plane.

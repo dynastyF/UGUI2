@@ -1,0 +1,30 @@
+一、使用方法
+1、WaterSurface_no_reflect没有镜面反射shader的用法
+    新建一个材质球，在Shader选项中选中"Custom/WaterSurface_no_reflect"，将材质球拖拽给水面网格。
+    正确设置好参数。
+
+2、WaterSurface_reflect 有镜面反射shader的用法
+    新建一个材质球，在Shader选项中选中"Custom/WaterSurface_no_reflect"，将材质球拖拽给水面网格。
+    正确设置好参数。
+
+    将水面网格的游戏对象的Layout设置为"Water",将"Scripts/Reflection"脚本拖拽给水面网格游戏对象。
+
+二、参数说明
+1、着色器参数说明
+	Main Color : 主颜色
+    Refract Texture : 海底折射贴图，需要由美术提供。
+    Bump Texture : 法线贴图，使用"Textures/SmallWaves".
+    Bump strength : 法线扭曲的强度，设置为2效果比较好。
+    Bump direction : 水波运动的方向，可以设置两个方向，(x, y)是第一个水波运动的方向，(z, w)是第二个水面运动的方向。两个水波运动的方向最好不要相同。
+    Bump tiling : 水波的大小, xyzw四个值最好设置成相同大小。
+    Fresnel Texture : 存储菲涅尔系数的贴图，使用"Textures/fresnel"。
+    skybox : 天空盒，使用"Textures/sky"。
+    Specular Color : 高光颜色。
+    shiness,Refract Perturb,Reflect Perturb : 
+    	x是高光反射强度。
+    	y是折射扰动大小。
+    	z是反射扰动大小。
+    sun direction : (x, y, z)定义了太阳光的方向。
+
+2、Reflection脚本参数说明
+    Clip Plane Offset : 镜面反射裁剪面的偏移
