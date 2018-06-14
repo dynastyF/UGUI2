@@ -63,6 +63,7 @@
     <Compile Include="Assets\Glow11\Glow11DemoScene\Scripts\Set60Fps.cs" />
     <Compile Include="Assets\gManager.cs" />
     <Compile Include="Assets\inputName.cs" />
+    <Compile Include="Assets\IOHelper.cs" />
     <Compile Include="Assets\levelSroll.cs" />
     <Compile Include="Assets\moveMan.cs" />
     <Compile Include="Assets\MoviePlayer.cs" />
@@ -78,6 +79,7 @@
     <Compile Include="Assets\setName.cs" />
     <Compile Include="Assets\SimpleWater_ZM\Scripts\Reflection.cs" />
     <Compile Include="Assets\skillItem.cs" />
+    <Compile Include="Assets\TestSave.cs" />
     <Compile Include="Assets\toggoleChange.cs" />
     <None Include="Assets\Glow11\Shaders\Unity\Unlit-AlphaTest.shader" />
     <None Include="Assets\Glow11\Shaders\Unity\Normal-Bumped.shader" />
