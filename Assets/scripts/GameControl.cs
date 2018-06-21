@@ -44,6 +44,7 @@ public  class GameControl : MonoBehaviour {
     {
         gameInfo temp = new gameInfo();
         temp.volume = AudioManager._instance.getVolume();
+        Debug.Log(temp.volume);
         IOHelper.setData(filename, temp);
     }
 
